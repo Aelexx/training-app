@@ -1,13 +1,108 @@
 body {
+  display:flex;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  background-image: url("/public/main-image.png");
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+  background-size:cover;
+  background-attachment: fixed;
+ 
+} 
+
+.title-main-page {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  top: 17%;
+  left: 18%;
+  text-shadow: 4px 4px 5px #D22D2D;
+  text-shadow: 5px 0 #D22D2D, -2px 0 #D22D2D, 0 2px #D22D2D, 0 -2px #D22D2D, 1px 1px #D22D2D,
+    -1px -1px #D22D2D, 1px -1px #D22D2D, -1px 1px #D22D2D;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.article-page {
+  background-color: rgb(255, 255, 255);
+  background-repeat:repeat-y;
+  background-size: cover;
+  background-color: white;
+  text-align: center;
+  position:fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 0 #FFFFFF, -2px 0 #FFFFFF, 0 2px #FFFFFF, 0 -2px #FFFFFF, 1px 1px #D22D2D,
+    -1px -1px #FFFFFF, 1px -1px #FFFFFF, -1px 1px #FFFFFF;
+}
+
+.article-caption{
+  text-align: justify;
+  padding: 16px;
+  
+}
+
+#root {
+
+}
+
+#rio-prices {
+  width: 20%;
+  height: auto;
+}
+
+#cheap-page {
+  background-image: url("/public/cheap-image.png"); 
+}
+
+.just-article {
+  background-color: #FFFFFF;
+  position: absolute;
+  resize: both; 
+  overflow: auto;
+  top: 15%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  border-radius: 15px;
+  border-style: double;
+}
+
+
+#speak-page {
+  background-image: url("/public/speak-image.png");
+}
+
+
+#watch-page {
+  background-image: url("/public/watch-image.png"); 
+}
+
+
+#custom-page {
+  background-image: url("/public/custom-image.png");
+}
+
+
+#hint-page { 
+  background-image: url("/public/hint-image.png"); 
+}
+
+
+#safe-page {
+  background-image: url("/public/safe-image.png");
+}
+
+.layouts {
+display:grid;
+border-radius: 15px;
+a:link { color: #D22D2D; text-decoration: none; }  
+a:visited { color: #D22D2D; }  
+a:hover { color: #D22D2D; }  
+a:active { color: #D22D2D; } 
 }
