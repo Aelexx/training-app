@@ -1,6 +1,6 @@
 function Rioprices(){
 
-fetch('C:/training_react/training-app/src/pages')
+fetch('https://stackblitz.com/~/github.com/Aelexx/training-app?file=src/pages/Rio-prices.json&view=editor')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
