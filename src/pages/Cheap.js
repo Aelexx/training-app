@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import articlesData from "./datas/article-cheap.json";
-import fetcha from "./Rio-prices.json";
+
 import Rioprices from './Rio-prices';
 
  const ArticleList = () => {
