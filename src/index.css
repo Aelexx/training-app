@@ -100,6 +100,8 @@ body {
 
 .layouts {
 display:grid;
+
+
 border-radius: 15px;
 a:link { color: #D22D2D; text-decoration: none; }  
 a:visited { color: #D22D2D; }  

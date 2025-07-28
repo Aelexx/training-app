@@ -20,7 +20,7 @@ const Layout = () => {
                      </Link>
                     <Link to="/watch">
                     <div className="cards">
-                         А что <br></br> посмотреть? 
+                         А что <br></br> увидеть? 
                     </div>
                     </Link>
                     <Link to="/custom">

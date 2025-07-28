@@ -1,7 +1,9 @@
 .cards {
   border-style:double;
-  border: solid 8px, white;
+  border: solid 4px, white;
   border-radius: 150px;
+  width: 200px;
+  height: 100px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   color: rgb(210, 45, 45);
   font-weight: bolder;
@@ -11,7 +13,9 @@
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   text-align:center;
   line-height: 1.1;
-  vertical-align: middle;
+  padding-top: 10px;
+
+
   
 
 }
