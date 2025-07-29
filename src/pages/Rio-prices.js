@@ -3,7 +3,7 @@ function Rioprices(){
     const lat = 52.52; // Example latitude
     const lon = 13.405; // Example longitude
     const apiKey = 'eb9c24f68ed54d3b98d180818252907'; // Replace with your actual API key
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=eb9c24f68ed54d3b98d180818252907&q=Rio de janeiro&aqi=no`;
 
     fetch(apiUrl)
       .then(response => {
