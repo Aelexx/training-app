@@ -4,22 +4,20 @@ function Rioprices(){
     const lon = 13.405; // Example longitude
     const apiKey = 'eb9c24f68ed54d3b98d180818252907'; // Replace with your actual API key
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=eb9c24f68ed54d3b98d180818252907&q=Rio de janeiro&aqi=no`;
-    const targetDiv = document.getElementById('my-data-display');
+    const targetDiv = document.getElementById('rio-prices');
 
-    fetch(apiUrl)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Assuming 'data' is an array of objects
-        data.forEach(item => {
-            const p = document.createElement('p');
-            targetDiv.appendChild(p);
+    fetch(apiUrl) // Example API endpoint
+        .then(response => response.json())
+        .then(data => {
+          targetDiv.innerHTML = `
+                <h2>${data.title}</h2>
+                <p>${data.body}</p>
+            `;
+        })
+        .catch(error => {
+          targetDiv.textContent = 'Failed to load data.';
+            console.error('Error:', error);
         });
-    })
     
 }
 export default Rioprices;
