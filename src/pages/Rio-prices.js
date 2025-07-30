@@ -21,9 +21,6 @@ function Rioprices(){
             targetDiv.appendChild(p);
         });
     })
-    .catch(error => {
-        targetDiv.textContent = 'Failed to load data. Please try again later.';
-        console.error('Error fetching data:', error);
-    });
+    
 }
 export default Rioprices;
