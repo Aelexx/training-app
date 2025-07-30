@@ -4,17 +4,20 @@ function Rioprices(){
     const lon = 13.405; // Example longitude
     const apiKey = 'eb9c24f68ed54d3b98d180818252907'; // Replace with your actual API key
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=eb9c24f68ed54d3b98d180818252907&q=Rio de janeiro&aqi=no`;
-    const targetDiv = document.getElementById('rio-prices');
 
-    fetch(apiUrl) // Example API endpoint
-        .then(response => response.json())
-        .then(data => {
-          targetDiv.innerHTML = `
-                
-                <p>${data}</p>
-            `;
-        })
-
-    
+    fetch(apiUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Weather data:', data);
+        // Process and display the data on your site
+      })
+      .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+      });
 }
 export default Rioprices;
