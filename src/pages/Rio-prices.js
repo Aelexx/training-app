@@ -4,7 +4,8 @@ function Rioprices(){
     const lon = 13.405; // Example longitude
     const apiKey = 'eb9c24f68ed54d3b98d180818252907'; // Replace with your actual API key
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=eb9c24f68ed54d3b98d180818252907&q=Rio de janeiro&aqi=no`;
-    const targetDiv = document.getElementById('div-fetch');
+    const targetDiv = document.getElementById('my-data-display');
+
     fetch(apiUrl)
       .then(response => {
         if (!response.ok) {
@@ -13,12 +14,11 @@ function Rioprices(){
         return response.json();
       })
       .then(data => {
-        
-        <div id="div-fetch">
-
-        </div>
-        //console.log('Weather data:', data);
-        // Process and display the data on your site
+        data.forEach(item => {
+          const p = document.createElement('p');
+          p.textContent = `Name: ${item.name}, Value: ${item.value}`;
+          targetDiv.appendChild(p);
+      });
       })
       .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
