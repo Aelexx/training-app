@@ -10,8 +10,8 @@ function Rioprices(){
         .then(response => response.json())
         .then(data => {
           targetDiv.innerHTML = `
-                <h2>${data.title}</h2>
-                <p>${data.body}</p>
+                
+                <p>${data}</p>
             `;
         })
 
