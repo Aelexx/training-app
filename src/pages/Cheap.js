@@ -19,7 +19,7 @@ import Rioprices from './Rio-prices';
               <div className="article-caption">
                 {article.content}
               </div>
-              <div id="rio-prices">
+              <div id="data-container">
                 <Rioprices />
               </div>  
             </div>
