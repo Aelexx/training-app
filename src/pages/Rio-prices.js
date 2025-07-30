@@ -17,7 +17,6 @@ function Rioprices(){
         // Assuming 'data' is an array of objects
         data.forEach(item => {
             const p = document.createElement('p');
-            p.textContent = `Name: ${item.name}, Value: ${item.value}`;
             targetDiv.appendChild(p);
         });
     })
