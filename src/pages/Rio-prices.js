@@ -14,14 +14,16 @@ function Rioprices(){
         return response.json();
       })
       .then(data => {
+        // Assuming 'data' is an array of objects
         data.forEach(item => {
-          const p = document.createElement('p');
-          p.textContent = `Name: ${item.name}, Value: ${item.value}`;
-          targetDiv.appendChild(p);
-      });
-      })
-      .catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
-      });
+            const p = document.createElement('p');
+            p.textContent = `Name: ${item.name}, Value: ${item.value}`;
+            targetDiv.appendChild(p);
+        });
+    })
+    .catch(error => {
+        targetDiv.textContent = 'Failed to load data. Please try again later.';
+        console.error('Error fetching data:', error);
+    });
 }
 export default Rioprices;
