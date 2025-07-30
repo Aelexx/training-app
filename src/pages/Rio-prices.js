@@ -14,10 +14,7 @@ function Rioprices(){
                 <p>${data.body}</p>
             `;
         })
-        .catch(error => {
-          targetDiv.textContent = 'Failed to load data.';
-            console.error('Error:', error);
-        });
+
     
 }
 export default Rioprices;
