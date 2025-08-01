@@ -20,9 +20,9 @@ body {
   position: absolute;
   top: 17%;
   left: 18%;
-  text-shadow: 4px 4px 5px #D22D2D;
-  text-shadow: 5px 0 #D22D2D, -2px 0 #D22D2D, 0 2px #D22D2D, 0 -2px #D22D2D, 1px 1px #D22D2D,
-    -1px -1px #D22D2D, 1px -1px #D22D2D, -1px 1px #D22D2D;
+  text-shadow: 0.25rem 0.25rem 0.3125rem #D22D2D;
+  text-shadow: 0.3125rem 0 #D22D2D, -0.125rem 0 #D22D2D, 0 0.125rem #D22D2D, 0 -0.125rem #D22D2D, 0.0625rem 0.0625rem #D22D2D,
+    -0.0625rem -0.0625rem #D22D2D, 0.0625rem -0.0625rem #D22D2D, -0.0625rem 0.0625rem #D22D2D;
 }
 
 .article-page {
@@ -37,8 +37,8 @@ body {
   height: 100%;
   font-size: 1.4rem;
   color: rgb(0, 0, 0);
-  text-shadow: 2px 0 #FFFFFF, -2px 0 #FFFFFF, 0 2px #FFFFFF, 0 -2px #FFFFFF, 1px 1px #D22D2D,
-    -1px -1px #FFFFFF, 1px -1px #FFFFFF, -1px 1px #FFFFFF;
+  text-shadow: 0.125rem 0 #FFFFFF, -0.125rem 0 #FFFFFF, 0 0.125rem #FFFFFF, 0 -0.125rem #FFFFFF, 0.0625rem 0.0625rem #D22D2D,
+    -0.0625rem -0.0625rem #FFFFFF, 0.0625rem -0.0625rem #FFFFFF, -0.0625rem 0.0625rem #FFFFFF;
 }
 
 .article-caption{
