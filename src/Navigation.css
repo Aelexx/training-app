@@ -1,7 +1,7 @@
 .cards {
   border-style:double;
-  border: solid 4px, white;
-  border-radius: 150px;
+  border: solid 0.25rem, white;
+  border-radius: 9.375rem;
   width: 12.5rem;
   height: 6.25rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
