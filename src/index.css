@@ -102,7 +102,7 @@ body {
 display:grid;
 
 
-border-radius: 15px;
+border-radius: 0,9375rem;
 a:link { color: #D22D2D; text-decoration: none; }  
 a:visited { color: #D22D2D; }  
 a:hover { color: #D22D2D; }  
