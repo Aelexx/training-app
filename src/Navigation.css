@@ -9,7 +9,7 @@
   font-weight: bolder;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2rem;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+  text-shadow: 0.125rem 0 #fff, -0.125rem 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   text-align:center;
   line-height: 1.1;
