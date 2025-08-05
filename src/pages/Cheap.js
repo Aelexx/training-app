@@ -21,7 +21,7 @@ import Rioprices from './Rio-prices';
               </div>
               <div id="data-container">
                 <Rioprices />
-              </div>  
+              </div> 
             </div>
           ))}
         </div>
