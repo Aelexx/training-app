@@ -43,9 +43,9 @@
   }
 }
 
-{
-  "include": ["src"],
-  "compilerOptions": {
-    "outDir": "./build"
-  }
-}
+// {
+//   "include": ["src"],
+//   "compilerOptions": {
+//     "outDir": "./build"
+//   }
+// }
