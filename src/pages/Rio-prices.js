@@ -13,10 +13,7 @@ function Rioprices(){
         return response.json();
       })
       .then(data => {
-              dataContainer.innerHTML = `
-                    <h2> ${data}</h2>
-                    
-                `;
+              dataContainer.innerHTML = data;
       })
       .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
